@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CustomCraft - Customize T-Shirt</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+    <div class="logo">
+        <span>✦</span> CustomCraft
+    </div>
+
+    <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="#">Shop</a>
+        <a href="customize.html">Customize</a>
+        <a href="gift-box.html">Gift Boxes</a>
+        <a href="track-order.html">Track Order</a>
+    </div>
+
+    <div class="nav-actions">
+
+        <a
+            href="wishlist.html"
+            class="wishlist-link"
+            title="Wishlist">
+            ♡ <span id="wishlist-count">0</span>
+        </a>
+
+        <a
+            href="cart.html"
+            class="cart-link"
+            title="Cart">
+            🛒 <span id="cart-count">0</span>
+        </a>
+
+    </div>
+
+</nav>
+
+    <section class="customize-page">
+
+        <div class="customize-heading">
+
+            <p>MAKE IT YOURS</p>
+
+            <h1>Customize Your T-Shirt</h1>
+
+            <span>
+                Create a T-shirt that matches your unique style.
+            </span>
+
+        </div>
+
+
+        <div class="customize-container">
+
+            <div class="tshirt-preview">
+
+                <div class="tshirt-design">
+                    <img
+                        src="../images/tshirt.png"
+                        alt="Custom T-Shirt"
+                        id="tshirt-preview-image">
+                    <div id="tshirt-text-preview"></div>
+                </div>
+
+            </div>
+
+
+            <div class="customize-options">
+
+                <h2>T-Shirt Details</h2>
+
+                <label>Choose Color</label>
+
+                <select id="tshirt-color">
+
+                    <option value="White">White</option>
+                    <option value="Black">Black</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Red">Red</option>
+
+                </select>
+
+
+                <label>Choose Size</label>
+
+                <select id="tshirt-size">
+
+                    <option value="S">Small (S)</option>
+                    <option value="M">Medium (M)</option>
+                    <option value="L">Large (L)</option>
+                    <option value="XL">Extra Large (XL)</option>
+
+                </select>
+
+
+                <label>Add Your Text</label>
+
+                <input
+                    type="text"
+                    id="tshirt-text"
+                    placeholder="Enter your text">
+
+
+                <div class="customize-price">
+
+                    <span>Price</span>
+
+                    <strong>₹599</strong>
+
+                </div>
+
+
+                <button
+                    class="customize-cart-btn"
+                    id="customize-cart-btn">
+
+                    🛒 Add Customized T-Shirt
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="../js/customize.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CustomCraft - Contact Us</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <span>✦</span> CustomCraft
+        </div>
+
+        <div class="nav-links">
+
+            <a href="../index.html">Home</a>
+
+            <a href="../index.html#featured-products">Shop</a>
+
+            <a href="customize.html">Customize</a>
+
+            <a href="gift-box.html">Gift Boxes</a>
+
+            <a href="track-order.html">Track Order</a>
+
+        </div>
+
+        <div class="nav-actions">
+
+            <a
+                href="wishlist.html"
+                class="wishlist-link"
+                title="Wishlist">
+                ♡ <span id="wishlist-count">0</span>
+            </a>
+
+            <a
+                href="cart.html"
+                class="cart-link"
+                title="Cart">
+                🛒 <span id="cart-count">0</span>
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <section class="contact-page">
+
+        <div class="contact-heading">
+
+            <p>GET IN TOUCH</p>
+
+            <h1>Contact Us</h1>
+
+            <span>
+                Have a question? We would love to hear from you.
+            </span>
+
+        </div>
+
+
+        <div class="contact-container">
+
+            <div class="contact-info">
+
+                <h2>Let's Talk</h2>
+
+                <p>
+                    If you have any questions about our products,
+                    orders, or customization, feel free to contact us.
+                </p>
+
+                <div class="contact-detail">
+
+                    <strong>📧 Email</strong>
+
+                    <span>customcraft@example.com</span>
+
+                </div>
+
+                <div class="contact-detail">
+
+                    <strong>📞 Phone</strong>
+
+                    <span>+91 XXXXX XXXXX</span>
+
+                </div>
+
+                <div class="contact-detail">
+
+                    <strong>📍 Location</strong>
+
+                    <span>India</span>
+
+                </div>
+
+            </div>
+
+
+            <form class="contact-form" id="contact-form">
+
+                <h2>Send a Message</h2>
+
+                <input
+                    type="text"
+                    id="contact-name"
+                    placeholder="Your Name"
+                    required>
+
+                <input
+                    type="email"
+                    id="contact-email"
+                    placeholder="Your Email"
+                    required>
+
+                <input
+                    type="text"
+                    id="contact-subject"
+                    placeholder="Subject"
+                    required>
+
+                <textarea
+                    id="contact-message"
+                    placeholder="Write your message..."
+                    required></textarea>
+
+                <button type="submit">
+                    Send Message →
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <div class="footer-logo">
+                    ✦ CustomCraft
+                </div>
+
+                <p>
+                    Your Idea. Your Design. Your Product.
+                </p>
+
+                <span>
+                    Create personalized products and meaningful
+                    gifts made especially for you.
+                </span>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>Shop</h3>
+
+                <a href="customize.html">T-Shirts</a>
+                <a href="gift-box.html">Gift Boxes</a>
+                <a href="../index.html#featured-products">Mugs</a>
+                <a href="../index.html#featured-products">All Products</a>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>Support</h3>
+
+                <a href="contact.html">Contact Us</a>
+                <a href="track-order.html">Track Order</a>
+                <a href="faq.html">FAQ</a>
+                <a href="shipping.html">Shipping</a>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>Follow Us</h3>
+
+                <div class="social-links">
+                    <a href="#">Instagram</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Facebook</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 CustomCraft. All Rights Reserved.
+            </p>
+
+            <p>
+                Designed with HTML, CSS & JavaScript
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script>
+
+        const contactForm =
+            document.getElementById("contact-form");
+
+        contactForm.addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            alert("Thank you! Your message has been received.");
+
+            contactForm.reset();
+
+        });
+
+    </script>
+
+    <script>
+
+        let wishlist =
+            JSON.parse(localStorage.getItem("customCraftWishlist")) || [];
+
+        let cart =
+            JSON.parse(localStorage.getItem("customCraftCart")) || [];
+
+        document.getElementById("wishlist-count").textContent =
+            wishlist.length;
+
+        let totalItems = 0;
+
+        cart.forEach(function(item) {
+            totalItems += item.quantity;
+        });
+
+        document.getElementById("cart-count").textContent =
+            totalItems;
+
+    </script>
+
+</body>
+
+</html>

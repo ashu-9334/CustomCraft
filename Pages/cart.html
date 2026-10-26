@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CustomCraft - Cart</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+        <span>✦</span> CustomCraft
+    </div>
+
+    <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#featured-products">Shop</a>
+        <a href="customize.html">Customize</a>
+        <a href="gift-box.html">Gift Boxes</a>
+        <a href="track-order.html">Track Order</a>
+    </div>
+
+    <div class="nav-actions">
+
+        <a
+            href="wishlist.html"
+            class="wishlist-link"
+            title="Wishlist">
+            ♡ <span id="wishlist-count">0</span>
+        </a>
+
+        <a
+            href="cart.html"
+            class="cart-link"
+            title="Cart">
+            🛒 <span id="cart-count">0</span>
+        </a>
+
+    </div>
+
+</nav>
+
+    <!-- Cart Header -->
+
+    <section class="cart-page">
+
+        <div class="cart-heading">
+
+            <p>YOUR SHOPPING CART</p>
+
+            <h1>My Cart</h1>
+
+            <span>
+                Review your selected products before checkout.
+            </span>
+
+        </div>
+
+
+        <!-- Cart Products -->
+
+        <div id="cart-items" class="cart-items">
+
+        </div>
+
+
+        <!-- Cart Summary -->
+
+        <div class="cart-summary">
+
+            <h2>Order Summary</h2>
+
+            <div class="summary-row">
+
+                <span>Subtotal</span>
+
+                <strong id="cart-total">₹0</strong>
+
+            </div>
+
+            <div class="summary-row">
+
+                <span>Delivery</span>
+
+                <strong>Free</strong>
+
+            </div>
+
+            <div class="summary-total">
+
+                <span>Total</span>
+
+                <strong id="final-total">₹0</strong>
+
+            </div>
+
+            <a
+                href="checkout.html"
+                class="checkout-btn"
+                id="checkout-btn">
+                Proceed to Checkout →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <script src="../js/cart.js"></script>
+
+</body>
+
+</html>

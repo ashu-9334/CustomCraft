@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CustomCraft - My Account</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <span>✦</span> CustomCraft
+        </div>
+
+        <div class="nav-links">
+
+            <a href="../index.html">Home</a>
+
+            <a href="../index.html#featured-products">Shop</a>
+
+            <a href="customize.html">Customize</a>
+
+            <a href="gift-box.html">Gift Boxes</a>
+
+            <a href="track-order.html">Track Order</a>
+
+        </div>
+
+        <div class="nav-actions">
+
+            <a
+                href="wishlist.html"
+                class="wishlist-link"
+                title="Wishlist">
+                ♡ <span id="wishlist-count">0</span>
+            </a>
+
+            <a
+                href="cart.html"
+                class="cart-link"
+                title="Cart">
+                🛒 <span id="cart-count">0</span>
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <section class="account-page">
+
+        <div class="account-heading">
+
+            <p>MY CUSTOMCRAFT</p>
+
+            <h1>My Account</h1>
+
+            <span>
+                Manage your account and view your shopping details.
+            </span>
+
+        </div>
+
+
+        <div class="account-container">
+
+
+            <div class="account-card">
+
+                <div class="account-icon">
+                    👤
+                </div>
+
+                <div>
+
+                    <h2 id="account-name">
+                        Customer
+                    </h2>
+
+                    <p id="account-email">
+                        customer@example.com
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="account-links">
+
+
+                <a href="cart.html" class="account-option">
+
+                    <span class="account-option-icon">
+                        🛒
+                    </span>
+
+                    <div>
+
+                        <strong>My Cart</strong>
+
+                        <p>
+                            View your selected products
+                        </p>
+
+                    </div>
+
+                    <span>→</span>
+
+                </a>
+
+
+                <a href="wishlist.html" class="account-option">
+
+                    <span class="account-option-icon">
+                        ♡
+                    </span>
+
+                    <div>
+
+                        <strong>My Wishlist</strong>
+
+                        <p>
+                            View your saved products
+                        </p>
+
+                    </div>
+
+                    <span>→</span>
+
+                </a>
+
+
+                <a href="track-order.html" class="account-option">
+
+                    <span class="account-option-icon">
+                        📦
+                    </span>
+
+                    <div>
+
+                        <strong>Track Order</strong>
+
+                        <p>
+                            Check your order status
+                        </p>
+
+                    </div>
+
+                    <span>→</span>
+
+                </a>
+
+
+                <div class="account-option">
+
+                    <span class="account-option-icon">
+                        🧾
+                    </span>
+
+                    <div>
+
+                        <strong>Latest Order</strong>
+
+                        <p id="latest-order">
+                            No order found
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="account-orders">
+
+                    <h2>My Orders</h2>
+
+                    <div id="order-history">
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <button
+                type="button"
+                id="logout-btn"
+                class="logout-btn">
+
+                Logout
+
+            </button>
+
+
+        </div>
+
+    </section>
+
+
+    <script src="../js/account.js"></script>
+
+</body>
+
+</html>

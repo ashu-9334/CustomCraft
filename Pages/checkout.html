@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CustomCraft - Checkout</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+    <div class="logo">
+        <span>✦</span> CustomCraft
+    </div>
+
+    <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="#">Shop</a>
+        <a href="customize.html">Customize</a>
+        <a href="gift-box.html">Gift Boxes</a>
+        <a href="track-order.html">Track Order</a>
+    </div>
+
+    <div class="nav-actions">
+
+        <a
+            href="wishlist.html"
+            class="wishlist-link"
+            title="Wishlist">
+            ♡ <span id="wishlist-count">0</span>
+        </a>
+
+        <a
+            href="cart.html"
+            class="cart-link"
+            title="Cart">
+            🛒 <span id="cart-count">0</span>
+        </a>
+
+    </div>
+
+</nav>
+
+    <section class="checkout-page">
+
+        <div class="checkout-heading">
+
+            <p>COMPLETE YOUR ORDER</p>
+
+            <h1>Checkout</h1>
+
+            <span>
+                Enter your details and place your order.
+            </span>
+
+        </div>
+
+        <div class="checkout-container">
+
+            <div class="checkout-form">
+
+                <h2>Delivery Details</h2>
+
+                <input
+                    type="text"
+                    id="customer-name"
+                    placeholder="Full Name"
+                    required>
+
+                <input
+                    type="tel"
+                    id="customer-mobile"
+                    placeholder="Mobile Number"
+                    required>
+
+                <input
+                    type="text"
+                    id="customer-address"
+                    placeholder="Address"
+                    required>
+
+                <input
+                    type="text"
+                    id="customer-city"
+                    placeholder="City"
+                    required>
+
+                <input
+                    type="text"
+                    id="customer-pincode"
+                    placeholder="PIN Code"
+                    required>
+
+                <div class="save-details-option">
+
+                    <input
+                        type="checkbox"
+                        id="save-delivery-details"
+                        checked>
+
+                    <label for="save-delivery-details">
+                        Save my delivery details for next order
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <div class="checkout-summary">
+
+                <h2>Order Summary</h2>
+
+                <div id="checkout-items"></div>
+
+                <div class="checkout-total">
+
+                    <span>Total</span>
+
+                    <strong id="checkout-total">₹0</strong>
+
+                </div>
+
+                <button class="place-order-btn" id="place-order-btn">
+                    Place Order →
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+<script src="../js/checkout.js"></script>
+
+</body>
+
+</html>

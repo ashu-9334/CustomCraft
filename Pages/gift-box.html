@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CustomCraft - Customize Gift Box</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+    <div class="logo">
+        <span>✦</span> CustomCraft
+    </div>
+
+    <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="#">Shop</a>
+        <a href="customize.html">Customize</a>
+        <a href="gift-box.html">Gift Boxes</a>
+        <a href="track-order.html">Track Order</a>
+    </div>
+
+    <div class="nav-actions">
+
+        <a
+            href="wishlist.html"
+            class="wishlist-link"
+            title="Wishlist">
+            ♡ <span id="wishlist-count">0</span>
+        </a>
+
+        <a
+            href="cart.html"
+            class="cart-link"
+            title="Cart">
+            🛒 <span id="cart-count">0</span>
+        </a>
+
+    </div>
+
+</nav>
+
+    <section class="gift-page">
+
+        <div class="gift-heading">
+
+            <p>CREATE A SPECIAL GIFT</p>
+
+            <h1>Customize Your Gift Box</h1>
+
+            <span>
+                Choose your items and create a personalized gift box.
+            </span>
+
+        </div>
+
+
+        <div class="gift-container">
+
+            <div class="gift-preview">
+
+                <div class="gift-icon">
+                    <img
+                        src="../images/giftbox.png"
+                        alt="Gift Box"
+                        id="gift-preview-image">
+                </div>
+
+                <h2 id="gift-preview-title">
+                    Your Gift Box
+                </h2>
+
+                <p>
+                    A special box made by you.
+                </p>
+
+            </div>
+
+
+            <div class="gift-options">
+
+                <h2>Choose Your Gift</h2>
+
+
+                <label>Select Box Type</label>
+
+                <select id="box-type">
+
+                    <option value="Classic Gift Box">
+                        Classic Gift Box
+                    </option>
+
+                    <option value="Premium Gift Box">
+                        Premium Gift Box
+                    </option>
+
+                    <option value="Birthday Gift Box">
+                        Birthday Gift Box
+                    </option>
+
+                </select>
+
+
+                <label>Choose a Gift Item</label>
+
+                <select id="gift-item">
+
+                    <option value="Personalized Mug">
+                        Personalized Mug
+                    </option>
+
+                    <option value="Keychain">
+                        Keychain
+                    </option>
+
+                    <option value="Greeting Card">
+                        Greeting Card
+                    </option>
+
+                    <option value="Photo Frame">
+                        Photo Frame
+                    </option>
+
+                </select>
+
+
+                <label>Gift Message</label>
+
+                <textarea
+                    id="gift-message"
+                    placeholder="Write a special message..."></textarea>
+
+
+                <div class="gift-price">
+
+                    <span>Price</span>
+
+                    <strong>₹899</strong>
+
+                </div>
+
+
+                <button
+                    class="gift-cart-btn"
+                    id="gift-cart-btn">
+
+                    🛒 Add Gift Box to Cart
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="../js/gift-box.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CustomCraft - Track Order</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+    <div class="logo">
+        <span>✦</span> CustomCraft
+    </div>
+
+    <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="#">Shop</a>
+        <a href="customize.html">Customize</a>
+        <a href="gift-box.html">Gift Boxes</a>
+        <a href="track-order.html">Track Order</a>
+    </div>
+
+    <div class="nav-actions">
+
+        <a
+            href="wishlist.html"
+            class="wishlist-link"
+            title="Wishlist">
+            ♡ <span id="wishlist-count">0</span>
+        </a>
+
+        <a
+            href="cart.html"
+            class="cart-link"
+            title="Cart">
+            🛒 <span id="cart-count">0</span>
+        </a>
+
+    </div>
+
+</nav>
+
+    <section class="tracking-page">
+
+        <div class="tracking-heading">
+
+            <p>ORDER TRACKING</p>
+
+            <h1>Track Your Order</h1>
+
+            <span>
+                Enter your Order ID to check your order status.
+            </span>
+
+        </div>
+
+
+        <div class="tracking-box">
+
+            <div class="tracking-search">
+
+                <input
+                    type="text"
+                    id="order-id-input"
+                    placeholder="Enter Order ID">
+
+                <button id="track-btn">
+                    Track Order
+                </button>
+
+            </div>
+
+
+            <div id="tracking-result">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="../js/track-order.js"></script>
+
+</body>
+
+</html>
